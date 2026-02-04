@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Data Submission</h2>
+        
+        <form id="uploadForm">
+            <div class="input-group">
+                <label for="csvFile">Upload CSV File</label>
+                <input type="file" id="csvFile" accept=".csv" required>
+            </div>
+
+            <div class="input-group">
+                <label for="weights">Weights (comma separated numbers)</label>
+                <input type="text" id="weights" placeholder="e.g., 0.5, 0.2, 0.3" required>
+            </div>
+
+            <div class="input-group">
+                <label for="impacts">Impacts (comma separated + or -)</label>
+                <input type="text" id="impacts" placeholder="e.g., +, -, +, -" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="name@example.com" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Data</button>
+        </form>
+
+        <div id="messageBox" class="message-box hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
