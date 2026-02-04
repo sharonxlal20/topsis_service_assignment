@@ -1,0 +1,5 @@
+flask
+flask-cors
+python-dotenv
+gunicorn
+topsis-shivank-102303655==0.2.3
